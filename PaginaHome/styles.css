@@ -125,14 +125,100 @@ body {
 }
 
 h2 {
-    width: 283;
-    height: 38;
-    top: 913px;
-    left: 100px;
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 38px;
-    letter-spacing: 0.75px;
+    justify-content: space-around;
+}
 
+.coleção {
+    background-color: #D8E3F2;
+    padding: 60px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 70px;
+    padding: 15px;
+    text-align: center;
+    width: 405;
+        height: 251;
+        top: 971px;
+        left: 100px;
+        border-radius: 8px;
+}
+
+.coleção {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 405;
+    height: 251;
+    top: 971px;
+    left: 100px;
+    border-radius: 8px;
+
+}
+.supreme{
+    width: 242;
+        height: 251;
+        top: 971px;
+        left: 263px;
+}
+.Adidas {
+    max-width: 400px;
+    width: 100%;
+    width: 242;
+        height: 251;
+        top: 971px;
+        left: 263px;
+}
+
+.fone {
+    max-width: 400px;
+    width: 100%;
+    width: 242;
+        height: 251;
+        top: 971px;
+        left: 263px;
+}
+
+.coleções {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 405;
+
+
+}
+.btn-buy {
+    background-color: #fff;
+    color: #A80074;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #333;
+}
+h3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.icones{
+    display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+}
+.navegacao{
+    display: flex;
+}
+.pro{
+    justify-content: left;
+}
+.sapatos {
+    background-color: #ffff;
+    width: 203px;
 }
