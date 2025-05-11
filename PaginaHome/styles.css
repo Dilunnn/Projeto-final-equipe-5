@@ -188,56 +188,42 @@
      margin: 2rem 0 1rem;
  }
 
- .coleções {
-     display: flex;
-     flex-wrap: nowrap;
-     overflow-x: auto;
-     gap: 1.5rem;
-     padding: 0 1rem 2rem;
-     max-width: 1200px;
-     margin: 0 auto 3rem;
- }
+   body {
+      background-color: #f9f8ff;
+    }
+    .card-custom {
+      background-color: #e6ecf8;
+      border: none;
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      text-align: left;
+    }
+    .badge-desconto {
+      background-color: #e8ff5e;
+      color: #000;
+      font-weight: bold;
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      border-radius: 15px;
+    }
+    .btn-comprar {
+      background-color: #f5f1ff;
+      color: #a20074;
+      font-weight: 600;
+      border: none;
+      padding: 6px 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .card-img {
+      max-width: 100px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      
+    }
 
- .coleção {
-     background-color: #D8E3F2;
-     border-radius: 12px;
-     padding: 1.3rem;
-     flex: 0 0 300px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 1rem;
-     text-align: center;
-     user-select: none;
- }
-
- .coleção p,
- .coleção h2 {
-     margin: 0;
-     color: #C92071;
-     font-weight: 700;
- }
-
- .coleção img {
-     max-width: 100%;
-     height: auto;
-     border-radius: 8px;
- }
-
- .btn-buy {
-     background-color: white;
-     color: #C92071;
-     border: none;
-     padding: 10px 20px;
-     font-weight: 700;
-     border-radius: 25px;
-     cursor: pointer;
-     transition: background-color 0.3s ease;
- }
-
- .btn-buy:hover {
-     background-color: #f0d9e4;
- }
 
  /* Icons Section */
  .icones {
@@ -338,4 +324,21 @@
          padding-right: 0.5rem;
          gap: 1rem;
      }
+ }
+
+ .oferta-especial {
+     background: #f8f9fa;
+     padding: 50px 0;
+ }
+
+ .oferta-especial .subtitulo {
+     color: #d63384;
+     font-weight: 600;
+ }
+
+ .btn-oferta {
+     background: #d63384;
+     color: #fff;
+     border-radius: 8px;
+     padding: 10px 25px;
  }
