@@ -97,34 +97,27 @@
     <main>
         <section>
             <div class="container">
-                <div class="row  pb-2">
-                    <!-- <div class="col-10 ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing eli
+                <div class="row justify-content-between  pb-2">
+                    <div class="col-12 col-md-3 ">
+                        <div class="input-group ">
+                            <select class="form-select border-dark" id="input-filto" aria-label="Example select with button addon">
+                                <option selected><p class="fw-bold">Ordernar por:</p> </option>
+                                <option value="1">Mais relevante</option>
+                                <option value="2">Mais novo</option>
+                                <option value="3">Mais antigo</option>
+                            </select>
+                            <button id="btnfunil" class="btn btn-outline-secondary" type="button"><img src="funnel.svg" alt=""></button>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <button class="btn w-100">
-                            <img src="funnel.svg" alt="">
-                        </button>
-                    </div> -->
-                    <div class="input-group">
-                        <select class="form-select border-dark" id="input-filto" aria-label="Example select with button addon">
-                            <option selected><p class="fw-bold">Ordernar por:</p> </option>
-                            <option value="1">Mais relevante</option>
-                            <option value="2">Mais novo</option>
-                            <option value="3">Mais antigo</option>
-                        </select>
-                        <button id="btnfunil" class="btn btn-outline-secondary" type="button"><img src="funnel.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
+                
+                    <div class="col-12 col-md-6 text-md-end pt-md-2">
                         <h1 class="h6">Resultados para 'Tênis' - 389 produtos</h1>
                     </div>
                 </div>
                 <div id="produtos" class="row">
-                    <div id="produto0" class="col-6">
+                    <div id="produto0" class="col-6 col-md-3">
                         <!-- Produto-1 -->
-                        <div id="imagem-produto">
+                        <div id="imagem-produto" class="text-center">
                             <img src="Produto gênerico.png" alt="Produto gênerico">
                         </div>
                         <div id="descrição-produto">
