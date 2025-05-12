@@ -56,12 +56,55 @@
                 }
         function Navbar(tela) {
             let navbar = document.getElementById('navbar')
-            // if (tela >= 576) {
-            //      navbar.outerHTML = `
-            
+            navbar.setAttribute('class', 'col-12')
+            if (tela >= 576) {
+                 navbar.outerHTML = `
+                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagens/logo.png" alt="Logo" height="24" class="d-inline-block align-text-top" />
+          
+        </a>
+        <div>
+          <form class="d-flex" style="background-color: #f8f8f8" role="search">
+            <input class="form-control me-2 mt-1" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn" type="submit">
+              <img src="imagens/Search.png" alt="pesquisa" />
+            </button>
+          </form>
+        </div>
+        <div>
+          <a href="" class="text-dark p-3">Cadastre-se</a>
+          <button type="button" class="btn" style="background: #c92071">
+            <a href="" class="text-decoration-none text-light">Entrar</a>
+          </button>
+        </div>
+        <div>
+          <img src="/Projeto-final-equipe-5/Lista de produtos/imagens/Carrinho.png" alt="Carrinho" />
+        </div>
+      </div>
 
-            // ` 
-            // }
+    </nav>
+
+    <!-- navbar2 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class=" navebar navbar-nav">
+            <a class="nav-link" href="#">home</a>
+            <a class="nav-link" href="#">produtos</a>
+            <a class="nav-link" href="#">Categorias</a>
+            <a class="nav-link" href="#">meus pedidos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+            `; 
+            }
             
                
         }    
@@ -72,7 +115,7 @@
         const btnlimparfiltro = document.getElementById('limparfiltro')
         const formfiltro = document.getElementById('form-filtro')
         
-        logo.addEventListener('click', () => {window.location.href = '/PaginaHome/index.html'})
+        logo.addEventListener('click', () => {window.location.href = "/Projeto-final-equipe-5/PaginaHome/index.html";})
         btnlimparfiltro.addEventListener('click', () => {formfiltro.reset()})
 
         produtosHTML(window.innerWidth)
