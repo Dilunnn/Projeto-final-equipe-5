@@ -1,0 +1,84 @@
+ main{
+    background-color: rgb(244, 244, 244);
+ }
+ .navebar a:hover{
+    color: red;
+    text-decoration: underline;
+ }
+ .caminho{
+    font-size: smaller;
+    color: gray;
+    margin-left: 20px;
+ }
+ .carta{
+        margin: 5px;
+        background-color: rgb(244, 244, 244);
+        border: none;
+    }
+
+    .principal{
+        margin: 20px;
+        border: none;
+        background-color: rgb(244, 244, 244);
+    }
+    .imagemP{
+        display: flex;
+        background-color: azure;
+    }
+    .btn_tamanho{
+        border: black 1px solid;
+    }
+    .btn_cor{
+       
+        margin-bottom: 10px;
+    }
+    .azul:hover{
+        border: rgb(0, 174, 255) 2px solid;
+        border-radius: 100%;
+    }
+    .laranja:hover{
+        border: rgb(214, 95, 44) 2px solid;
+        border-radius: 100%;
+    }
+    .marrom:hover{
+        border: darkslategrey 2px solid;
+        border-radius: 100%;
+    }
+    .preto:hover{
+        border: rgb(64, 49, 100) 2px solid;
+        border-radius: 100%;
+    }
+
+.opções{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: start ;
+    gap: 6px;
+    margin: 20px;
+        }
+.produtos_titulo{
+    display:flex;
+    justify-content: space-between;
+}
+.produtosR{
+    
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgb(106, 106, 106);
+
+}
+.ver_todos{
+    margin-right: 20px;
+        color: rgb(246, 58, 89);
+        text-decoration: none;
+    }
+ .lista{
+    display: flex;
+    margin: 10px;
+    
+
+    }
+
+    
+   
