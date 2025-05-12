@@ -11,7 +11,7 @@
 
                     produtoDiv.innerHTML = `
                                 <div id="imagem-produto" class="text-center">
-                                    <img src="Produto gênerico.png" alt="Produto gênerico">
+                                    <img src="imagens/Produto gênerico.png" alt="Produto gênerico">
                                 </div>
                                 <div id="descrição-produto">
                                     <p>Tênis</p>
@@ -37,7 +37,7 @@
 
                     produtoDiv.innerHTML = `
                                 <div id="imagem-produto" class="text-center">
-                                    <img src="Produto gênerico.png" alt="Produto gênerico">
+                                    <img src="imagens/Produto gênerico.png" alt="Produto gênerico">
                                 </div>
                                 <div id="descrição-produto">
                                     <p>Tênis</p>
