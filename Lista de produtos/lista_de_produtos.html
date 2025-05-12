@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stylelistaprodutos.css">
+
+    
+    <title>Lista de produtos</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <!-- botão -->
+                    <div class="col-2 ">
+                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#filtro"><img src="Menu.png" alt="menu"></button>
+                    </div>
+                    <!-- logo -->
+                    <div class="col-5 col-sm-4  text-center" >
+                        <img id="logo" src="logo.png" alt="">
+                    </div>
+                    <!-- botão de procura -->
+                    <div class="col-1">
+                        <img id="pesquisa" src="Search.png" alt="">
+                    </div>
+                    <!-- carrinho -->
+                    <div class="col-2 col-sm-2  text-center">
+                        <img id="carrinho" src="Carrinho.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- filtro -->
+                     <div class="collapse-horizontal collapse col-10" id="filtro">
+                        <div class="row justify-content-between">
+                            <div class="col-4 "> <h1 class="h6">Filtrar por</h1> </div>
+                            <div class="col-2 "> <img src="iconfechar.png" class="ms-4 " alt="fechar"> </div>
+                            <hr>
+                        </div>
+                        <form action="">
+                            <!--Marca-->
+                            <h1 class="h6">Marca</h1>
+                            <div>
+                                <input type="checkbox" name="Marca" id="Adidas">
+                                <label class="" for="Adidas">Adidas</label>
+                            </div>
+
+                            <div>
+                                <!-- Outra Marca -->
+                                <input type="checkbox" name="Marca" id="Balenciaga">
+                                <label for="Balenciaga">Balenciaga</label>
+                            </div>
+
+                            <div>
+                                <!-- Outra Marca -->
+                                <input type="checkbox" name="Marca" id="K-Swiss">
+                                <label for="K-Swiss">K-Swiss</label>
+                            </div>
+
+                            <div>
+                                <!-- Outra Marca -->
+                                <input type="checkbox" name="Marca" id="Nike">
+                                <label for="Nike">Nike</label>
+                            </div>
+
+                            <div>
+                                <!-- Outra Marca -->
+                                <input type="checkbox" name="Marca" id="Puma">
+                                <label for="Puma">Puma</label>
+                            </div>
+
+                            
+                            <!--Categoria-->
+                            <h1 class="h6">Categoria</h1>
+                            <div><input type="checkbox" name="Categoria" id="Esporte-e-lazer"><label for="Esporte-e-lazer">Esporte e lazer</label></div>
+                            <div><input type="checkbox" name="Categoria" id="Casual"><label for="Casual">Casual</label></div>
+                            <div><input type="checkbox" name="Categoria" id="Utilitário"><label for="Utilitário">Utilitário</label></div>
+                            <div><input type="checkbox" name="Categoria" id="Corrida"><label for="Corrida">Corrida</label></div>
+                            <!--Gênero-->
+                            <h1 class="h6">Gênero</h1>
+                            <div><input type="checkbox" name="Genero" id="Masculino"><label for="Masculino">Masculino</label></div>
+                            <div><input type="checkbox" name="Genero" id="Feminino"><label for="Feminino">Feminino</label></div>
+                            <div><input type="checkbox" name="Genero" id="Unisex"><label for="Unisex">Unisex</label></div>
+                            <!--Estado-->
+                            <h1 class="h6">Estado</h1>
+                            <div><input type="radio" name="Estado" id="Novo"><label for="Novo">Novo</label></div>
+                            <div><input type="radio" name="Estado" id="Usado"><label for="Usado">Usado</label></div>
+                        </form>
+                     </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row justify-content-between pb-2">
+                    <div class="col-12 col-md-3 ">
+                        <div class="input-group ">
+                            <select class="form-select border-dark" id="input-filto" aria-label="Example select with button addon">
+                                <option selected><p class="fw-bold">Ordernar por:</p> </option>
+                                <option value="1">Mais relevante</option>
+                                <option value="2">Mais novo</option>
+                                <option value="3">Mais antigo</option>
+                            </select>
+                            <button id="btnfunil" class="btn btn-outline-secondary" type="button"><img src="funnel.svg" alt=""></button>
+                        </div>
+                    </div>
+                
+                    <div class="col-12 col-md-6 text-md-end pt-md-2">
+                        <h1 class="h6">Resultados para 'Tênis' - 389 produtos</h1>
+                    </div>
+                </div>
+                <div id="produtos" class="row">
+                    <div id="produto0" class="col-6 col-md-3">
+                        <!-- Produto-1 -->
+                        <div id="imagem-produto" class="text-center">
+                            <img src="Produto gênerico.png" alt="Produto gênerico">
+                        </div>
+                        <div id="descrição-produto">
+                            <p>Tênis</p>
+                            <p>K-Swiss V8 - Mascu...</p>
+                            <div class="d-flex justify-content-between">
+                                <p id="preco-antigo" class="text-decoration-line-through opacity-50">R$200</p>
+                                <p id="preco-atual" class="fw-bold">R$100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <!-- Logo e texto -->
+      <div class="col-md-3">
+        <h5 class="mb-3"><img src="logo-branca.png" alt="logo branca"> Digital Store</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <div>
+          <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Informação -->
+      <div class="col-md-3">
+        <h6 class="text-uppercase mb-3 border-start border-primary ps-2">Informação</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Sobre Drip Store</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Segurança</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Trabalhe conosco</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Meus Pedidos</a></li>
+        </ul>
+      </div>
+
+      <!-- Categorias -->
+      <div class="col-md-3">
+        <h6 class="text-uppercase mb-3">Categorias</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Camisetas</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Calças</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Bonés</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Headphones</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tênis</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-3">
+        <h6 class="text-uppercase mb-3">Contato</h6>
+        <p class="mb-1">Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
+        <p>(85) 3051-3411</p>
+      </div>
+    </div>
+
+    <hr class="border-secondary mt-4">
+    <div class="text-center">
+      <small>&copy; 2025 Digital College</small>
+    </div>
+  </div>
+</footer>
+</body>
+
+<script src="javascript_lista_produtos.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</html>
