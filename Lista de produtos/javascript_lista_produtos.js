@@ -5,7 +5,7 @@
                     produtoDiv.setAttribute("id",`produto${i}`)
                     produtoDiv.setAttribute("class", "col-6");
                     produtoDiv.addEventListener('click',() => {
-                        window.location.href = '/detalhes.html'
+                        window.location.href = '/Projeto-final-equipe-5/Detalhes/detalhes.html'
                     })
                     
 
