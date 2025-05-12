@@ -1,4 +1,4 @@
- function produtosHTML(tela) {
+        function produtosHTML(tela) {
                     if (tela <= 576) {
                     for (let i = 1; i < 8; i++) {
                     let produtoDiv = document.createElement("div");
@@ -53,7 +53,26 @@
                 }
             }
             // adicionar 15 produtos se for maior
-        }
+                }
+        function Navbar(tela) {
+            let navbar = document.getElementById('navbar')
+            if (tela >= 576) {
+                 navbar.outerHTML = `
+            
+
+            ` 
+            }
+            
+               
+        }    
         const produtos = document.getElementById("produtos");
+        const logo = document.getElementById('logo')
+        const pesquisa = document.getElementById('pesquisa')
+        const carrinho = document.getElementById('carrinho')
+        logo.addEventListener('click', () => {window.location.href = '/PaginaHome/index.html'})
+        
         produtosHTML(window.innerWidth)
+        Navbar(window.innerWidth)
+
+        
         
